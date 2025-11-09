@@ -1,0 +1,6 @@
+examples/
+test/
+.clang-format
+.gitattributes
+cornell_box.mtl
+cornell_box.obj

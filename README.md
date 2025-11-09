@@ -1,6 +1,6 @@
 # tinyobjloader in C
 
-Tiny but powerful header only wavefront obj loader written in C99.
+Tiny but powerful header only wavefront obj loader written in C99, by [Syoyo Fujita](https://github.com/syoyo).
 
 If you are looking for C++ version, please see https://github.com/syoyo/tinyobjloader
 
@@ -17,12 +17,23 @@ Experimental. Loading geometry data would be OK, More testing required for mater
   * Rungholt 7M triangle scene(260 MB) can be loaded in 4.7 secs and consumes 3.6 GB memory at the maximum on MacBook12 Core m5 1.2 GHz(single core use)
 * Unit tests using acutest thanks to @andystanton
 
+## Installation
+
+Run:
+```bash
+$ npm i tinyobjloader.c
+```
+
+And then include `tinyobj_loader_c.h` as follows:
+```c
+#include "node_modules/tinyobjloader.c/tinyobj_loader_c.h"
+```
 
 ## Usage
 
-Copy `tinyobj_loader_c.h` to your project.
+Include `tinyobj_loader_c.h` to your project.
 
-```
+```c
 /* define TINYOBJ_LOADER_C_IMPLEMENTATION for only *one* .c */
 #define TINYOBJ_LOADER_C_IMPLEMENTATION
 #include "tinyobj_loader_c.h"
@@ -39,7 +50,7 @@ you defined `TINYOBJ_LOADER_C_IMPLEMENTATION` in, before including `tinyobj_load
 Define either all or none of them. They replace `malloc`, `realloc`, `calloc` and `free` respectively.
 
 Example:
-```
+```c
 #define TINYOBJ_LOADER_C_IMPLEMENTATION
 #define TINYOBJ_MALLOC my_malloc
 #define TINYOBJ_REALLOC my_realloc
@@ -54,7 +65,7 @@ The single header test library [acutest](https://github.com/mity/acutest) is use
 
 The tests can be run from the project root using:
 
-```
+```bash
 $ make test
 ```
 
@@ -73,3 +84,10 @@ MIT license.
 ## TODO
 
 * [ ] Windows build?
+
+<br>
+<br>
+
+
+[![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/tinyobjloader.c)
