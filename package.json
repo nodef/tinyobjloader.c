@@ -1,0 +1,23 @@
+{
+  "name": "tinyobjloader.c",
+  "version": "1.2025.6",
+  "description": "Header only tiny wavefront .obj loader in pure C99; Syoyo Fujita (2016).",
+  "keywords": [
+    "c",
+    "library",
+    "obj",
+    "loader",
+    "3d",
+    "graphics"
+  ],
+  "homepage": "https://github.com/nodef/tinyobjloader.c#readme",
+  "bugs": {
+    "url": "https://github.com/nodef/tinyobjloader.c/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodef/tinyobjloader.c.git"
+  },
+  "license": "MIT",
+  "main": "tinyobjloader.h"
+}
